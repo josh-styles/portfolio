@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — Josh Styles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="gallery-page">
+
+    <!-- PROGRESS BAR -->
+    <div id="progress-bar"></div>
+
+    <!-- NAVBAR -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">JOSH <span>STYLES</span></a></div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- GALLERY HERO -->
+    <section class="gallery-hero">
+        <div class="home-bg-text">GALLERY</div>
+        <div class="gallery-hero-content">
+            <p class="home-eyebrow">Visual Portfolio</p>
+            <h1>The <em>Gallery</em></h1>
+        </div>
+    </section>
+
+    <!-- GALLERY GRID -->
+    <section class="gallery-section">
+        <div class="gallery-grid" id="galleryGrid">
+            <div class="gallery-item reveal" data-index="1"><img src="images/img1.jpeg" alt="Gallery Image 1"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="2"><img src="images/img2.jpeg" alt="Gallery Image 2"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="3"><img src="images/img3.jpeg" alt="Gallery Image 3"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="4"><img src="images/img4.jpeg" alt="Gallery Image 4"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="5"><img src="images/img5.jpeg" alt="Gallery Image 5"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="6"><img src="images/img6.jpeg" alt="Gallery Image 6"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="7"><img src="images/img7.jpeg" alt="Gallery Image 7"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="8"><img src="images/img8.jpeg" alt="Gallery Image 8"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="9"><img src="images/img9.jpeg" alt="Gallery Image 9"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="10"><img src="images/img10.jpeg" alt="Gallery Image 10"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="11"><img src="images/img11.jpeg" alt="Gallery Image 11"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="12"><img src="images/img12.JPG" alt="Gallery Image 12"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="13"><img src="images/img13.jpeg" alt="Gallery Image 13"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="14"><img src="images/img14.jpeg" alt="Gallery Image 14"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="15"><img src="images/img15.jpeg" alt="Gallery Image 15"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="16"><img src="images/img16.jpeg" alt="Gallery Image 16"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="17"><img src="images/img17.jpeg" alt="Gallery Image 17"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="18"><img src="images/img18.jpeg" alt="Gallery Image 18"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="19"><img src="images/img19.jpeg" alt="Gallery Image 19"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="20"><img src="images/img20.jpeg" alt="Gallery Image 20"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="21"><img src="images/img21.jpeg" alt="Gallery Image 21"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="22"><img src="images/img22.jpeg" alt="Gallery Image 22"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="23"><img src="images/img23.jpeg" alt="Gallery Image 23"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="24"><img src="images/img24.jpeg" alt="Gallery Image 24"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="25"><img src="images/img25.PNG" alt="Gallery Image 25"
+                    loading="lazy"></div>
+            <div class="gallery-item reveal" data-index="26"><img src="images/img26.PNG" alt="Gallery Image 26"
+                    loading="lazy"></div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <button class="lb-close" id="lbClose">✕</button>
+        <button class="lb-prev" id="lbPrev">&#8592;</button>
+        <button class="lb-next" id="lbNext">&#8594;</button>
+        <div class="lb-img-wrap">
+            <img src="" alt="Gallery Image" id="lbImage">
+        </div>
+        <div class="lb-counter" id="lbCounter">1 / 26</div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-logo"><a href="index.html">JOSH <span>STYLES</span></a></div>
+            <p class="footer-copy">© 2026 Josh Styles. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://instagram.com/styled_by_josh" target="_blank">Instagram</a>
+                <a href="https://wa.me/2348127282590" target="_blank">WhatsApp</a>
+                <a href="mailto:joshuaechue1@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
